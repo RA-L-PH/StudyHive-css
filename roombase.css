@@ -8,7 +8,7 @@
 }
 .home-container01 {
   width: 95%;
-  height: 288px;
+  height: 30%;
   display: flex;
   margin-top: var(--dl-space-space-oneandhalfunits);
   align-items: center;
@@ -65,7 +65,7 @@
 }
 .home-container06 {
   width: 95%;
-  height: 666px;
+  height: 70%;
   display: flex;
   align-items: center;
   margin-left: var(--dl-space-space-oneandhalfunits);
@@ -79,7 +79,7 @@
 .home-container07 {
   flex: 0 0 auto;
   width: 30%;
-  height: 80%;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   border-color: #000000;
@@ -90,7 +90,7 @@
 .home-container08 {
   flex: 0 0 auto;
   width: 40%;
-  height: 80%;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   border-color: #000000;
@@ -101,7 +101,7 @@
 .home-container09 {
   flex: 0 0 auto;
   width: 30%;
-  height: 80%;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   border-color: #000000;
