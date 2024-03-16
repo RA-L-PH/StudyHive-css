@@ -1,1 +1,80 @@
-
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.participants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  height: 100%;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.videocalling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  height: 100%;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3d3d3;
+  height: 100%;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.collab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  height: 100%;
+  width: 40%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.checkbox/notes{
+  height: 80%;
+  width: 80%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 1.2rem;
+}
