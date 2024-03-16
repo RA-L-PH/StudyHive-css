@@ -1,7 +1,7 @@
 .home-container {
   width: 100%;
   overflow: auto;
-  min-height: 100vh;
+  min-height: 100%;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
