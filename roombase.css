@@ -27,7 +27,6 @@ body {
     flex: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
-    height: 30%;
 }
 
 .column {
@@ -37,5 +36,4 @@ body {
     border-radius: 5px;
     text-align: left;
     background-color: #f1f1f1;
-    height: 70%;
 }
