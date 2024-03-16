@@ -24,17 +24,16 @@ body {
 }
 
 .row {
-    display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
-    height : 30%;
+    height: 30%;
 }
 
 .column {
-    flex: 1;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: left;
     background-color: #f1f1f1;
+    height: 70%;
 }
