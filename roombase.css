@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
+  margin: 10%;
 }
 .home-container01 {
   width: 100%;
