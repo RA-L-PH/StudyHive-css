@@ -79,7 +79,7 @@
 .home-container07 {
   flex: 0 0 auto;
   width: 30%;
-  height: 100%;
+  height: 80%;
   display: flex;
   align-items: flex-start;
   border-color: #000000;
@@ -90,7 +90,7 @@
 .home-container08 {
   flex: 0 0 auto;
   width: 40%;
-  height: 100%;
+  height: 80%;
   display: flex;
   align-items: flex-start;
   border-color: #000000;
@@ -101,7 +101,7 @@
 .home-container09 {
   flex: 0 0 auto;
   width: 30%;
-  height: 100%;
+  height: 80%;
   display: flex;
   align-items: flex-start;
   border-color: #000000;
