@@ -24,12 +24,14 @@ body {
 }
 
 .row {
+    flex: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
     height: 30%;
 }
 
 .column {
+    flex: 1;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
