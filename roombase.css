@@ -1,6 +1,6 @@
 .home-container {
   width: 100vw;
-  overflow: hidden;
+  overflow: none;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
