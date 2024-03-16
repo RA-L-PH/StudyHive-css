@@ -13,6 +13,7 @@
   justify-content: space-around;
   align-items: center;
   height: 30%;
+  width: 33.33%,33.33%,33.33%;
 }
 .bottomrow {
   display: flex;
@@ -20,13 +21,13 @@
   justify-content: space-around;
   align-items: center;
   height: 70%;
+  width: 30%,40%,30%;
 }
 .participants {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f1f1f1;
-  width: 33.33%;
   box-sizing: border-box;
   padding: 10px;
   font-size: 2rem;
@@ -37,7 +38,6 @@
   justify-content: center;
   align-items: center;
   background-color: #e0e0e0;
-  width: 33.33%;
   box-sizing: border-box;
   padding: 10px;
   font-size: 2rem;
@@ -48,7 +48,6 @@
   justify-content: center;
   align-items: center;
   background-color: #d3d3d3;
-  width: 33.33%;
   box-sizing: border-box;
   padding: 10px;
   font-size: 2rem;
@@ -60,21 +59,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  width: 30%;
 }
 .collab {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e0e0e0;
-  width: 40%;
   box-sizing: border-box;
   padding: 10px;
   font-size: 2rem;
   font-weight: bold;
 }
 .checkbox/notes{
-  width: 30%;
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #ccc;
