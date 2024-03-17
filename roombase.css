@@ -5,18 +5,16 @@
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
+  margin: 5%;
 }
 .home-container01 {
   width: 95%;
   height: 30%;
   display: flex;
-  margin-top: var(--dl-space-space-oneandhalfunits);
   align-items: center;
-  margin-left: var(--dl-space-space-oneandhalfunits);
   border-color: #000000;
   border-style: solid;
   border-width: 2px;
-  margin-right: var(--dl-space-space-oneandhalfunits);
   justify-content: center;
 }
 .home-container02 {
@@ -68,12 +66,9 @@
   height: 70%;
   display: flex;
   align-items: center;
-  margin-left: var(--dl-space-space-oneandhalfunits);
   border-color: #000000;
   border-style: solid;
   border-width: 2px;
-  margin-right: var(--dl-space-space-oneandhalfunits);
-  margin-bottom: var(--dl-space-space-oneandhalfunits);
   justify-content: center;
 }
 .home-container07 {
