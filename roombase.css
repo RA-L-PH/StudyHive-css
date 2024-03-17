@@ -1,11 +1,10 @@
 .home-container {
-  width: 85vw;
+  width: 100vw;
   overflow: hidden;
-  min-height: 85vh;
+  min-height: 100vh;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 5%;
 }
 .home-container01 {
   width: 95%;
