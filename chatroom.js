@@ -1,28 +1,38 @@
-var socketio = io();
+        const socket = io.connect('/');
+        const username = $('#username');
+        const room = $('#room');
+        const messages = $('#messages');
+        const message = $('#message');
 
-  const messages = document.getElementById("messages");
+        $(document).ready(() => {
+            socket.on('connect', () => {
+                console.log('Connected');
+            });
 
-  const createMessage = (name, msg) => {
-    const content = `
-    <div class="text">
-        <span>
-            <strong>${name}</strong>: ${msg}
-        </span>
-        <span class="muted">
-            ${new Date().toLocaleString()}
-        </span>
-    </div>
-    `;
-    messages.innerHTML += content;
-  };
+            socket.on('message', data => {
+                console.log(data);
+                messages.append(`<li>${data}</li>`);
+            });
 
-  socketio.on("message", (data) => {
-    createMessage(data.name, data.message);
-  });
+            $('#join').click(() => {
+                socket.emit('join', {
+                    username: username.val(),
+                    room: room.val(),
+                });
+            });
 
-  const sendMessage = () => {
-    const message = document.getElementById("message");
-    if (message.value == "") return;
-    socketio.emit("message", { data: message.value });
-    message.value = "";
-  };
+            $('#leave').click(() => {
+                socket.emit('leave', {
+                    username: username.val(),
+                    room: room.val(),
+                });
+            });
+
+            $('#send-message').click(() => {
+                socket.emit('message', {
+                    username: username.val(),
+                    room: room.val(),
+                    message: message.val(),
+                });
+            });
+        });
