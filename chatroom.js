@@ -1,38 +1,21 @@
-        const socket = io.connect('/');
-        const username = $('#username');
-        const room = $('#room');
-        const messages = $('#messages');
-        const message = $('#message');
+const socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port);
 
-        $(document).ready(() => {
-            socket.on('connect', () => {
-                console.log('Connected');
-            });
+    socket.on('connect', () => {
+        console.log('Connected to server');
+    });
 
-            socket.on('message', data => {
-                console.log(data);
-                messages.append(`<li>${data}</li>`);
-            });
+    socket.on('new_message', (data) => {
+        const messagesList = document.getElementById('messages');
+        const newMessage = document.createElement('li');
+        newMessage.innerHTML = `<strong>${data.author}:</strong> ${data.message} <small>${data.timestamp}</small>`;
+        messagesList.appendChild(newMessage);
+    });
 
-            $('#join').click(() => {
-                socket.emit('join', {
-                    username: username.val(),
-                    room: room.val(),
-                });
-            });
-
-            $('#leave').click(() => {
-                socket.emit('leave', {
-                    username: username.val(),
-                    room: room.val(),
-                });
-            });
-
-            $('#send-message').click(() => {
-                socket.emit('message', {
-                    username: username.val(),
-                    room: room.val(),
-                    message: message.val(),
-                });
-            });
-        });
+    function sendMessage() {
+        const messageInput = document.getElementById('message');
+        const roomName = document.getElementById('room-name').value;
+        if (messageInput.value && roomName) {
+            socket.emit('send_message', {room_name: roomName, message: messageInput.value});
+            messageInput.value = '';
+        }
+    }
