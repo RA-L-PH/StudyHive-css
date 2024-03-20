@@ -1,21 +1,28 @@
-const socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port);
+var socketio = io();
 
-    socket.on('connect', () => {
-        console.log('Connected to server');
-    });
+  const messages = document.getElementById("messages");
 
-    socket.on('new_message', (data) => {
-        const messagesList = document.getElementById('messages');
-        const newMessage = document.createElement('li');
-        newMessage.innerHTML = `<strong>${data.author}:</strong> ${data.message} <small>${data.timestamp}</small>`;
-        messagesList.appendChild(newMessage);
-    });
+  const createMessage = (name, msg) => {
+    const content = `
+    <div class="text">
+        <span>
+            <strong>${name}</strong>: ${msg}
+        </span>
+        <span class="muted">
+            ${new Date().toLocaleString()}
+        </span>
+    </div>
+    `;
+    messages.innerHTML += content;
+  };
 
-    function sendMessage() {
-        const messageInput = document.getElementById('message');
-        const roomName = document.getElementById('room-name').value;
-        if (messageInput.value && roomName) {
-            socket.emit('send_message', {room_name: roomName, message: messageInput.value});
-            messageInput.value = '';
-        }
-    }
+  socketio.on("message", (data) => {
+    createMessage(data.name, data.message);
+  });
+
+  const sendMessage = () => {
+    const message = document.getElementById("message");
+    if (message.value == "") return;
+    socketio.emit("message", { data: message.value });
+    message.value = "";
+  };
