@@ -131,9 +131,7 @@
   background-color: whitesmoke;
   height: 100%;
   display: flex;
-  flex-direction: column;
   width: 100%;
-  align-items: stretch;
 }
 
 .messages {
