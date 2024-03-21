@@ -1,0 +1,16 @@
+.todo-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 5px;
+            transition: background-color 0.3s ease;
+        }
+        /* Apply strikethrough effect to completed todos */
+        .completed label {
+            text-decoration: line-through;
+        }
+        /* Apply background color for checked todos */
+        .completed {
+            background-color: darkgray;
+        }
