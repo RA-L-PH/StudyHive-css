@@ -163,15 +163,13 @@ h2 {
 }
 
 /* Form row */
-.row {
-  align-items: start;
-  background-color: #e0e7ff; /* Light blue background for rows */
+.row { /* Light blue background for rows */
 }
 
 /* Column styling */
 .col-md-4 {
   padding: 10px;
-  max-width: 20%;
+  max-width: 10%;
   border: 1px solid #ccdfff; /* Light blue border for columns */
 }
 
