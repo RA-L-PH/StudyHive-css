@@ -9,6 +9,7 @@
 .home-container01 {
   width: 100vw;
   height: 30vh;
+  display: flex;
   align-items: center;
   border-color: #000000;
   border-style: solid;
@@ -38,18 +39,16 @@
   margin: 3px;
 }
 .home-container04 {
+  flex: 0 0 auto;
   width: 40%;
   height: 100%;
   display: flex;
+  align-items: flex-start;
   border-color: #000000;
   border-style: solid;
   border-width: 2px;
   flex-direction: column;
-  /* Center content horizontally and vertically */
-  align-items: center;
-  justify-content: center;
 }
-
 .home-container05 {
   flex: 0 0 auto;
   width: 30%;
@@ -101,7 +100,6 @@
   display: flex;
   align-items: flex-start;
 }
-
 .buttons {
   display: flex;
   flex-direction: column;
@@ -110,38 +108,31 @@
   gap: 10px;
   align-self: last baseline;
 }
-
 .join {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-
 .create-btn {
   width: 100%;
 }
-
 .messages {
   overflow-y: scroll;
   flex: 1;
   width: 100%;
 }
-
 .inputs {
   padding: 10px;
   width: 100%;
   display: flex;  
   align-self: last baseline;
 }
-
 h2 {
   text-align: center;
 }
-
 #message {
   flex: 1;
 }
-
 .text {
   display: flex;
   flex-direction: row;
@@ -150,7 +141,6 @@ h2 {
   padding-left: 10px;
   padding-right: 10px;
 }
-
 .muted {
   font-size: 10px;
   color: darkgray;
@@ -161,4 +151,39 @@ h2 {
     font-size: 40px; 
     margin-bottom: 10px;
     /* Add any specific styles for the timer container here */
+}
+
+/* Form row */
+.row {
+  align-items: center;
+  background-color: #e0e7ff; /* Light blue background for rows */
+}
+
+/* Column styling */
+.col-md-4 {
+  padding: 10px;
+  max-width: 30%;
+  border: 1px solid #ccdfff; /* Light blue border for columns */
+}
+
+/* Input styling */
+.form-control {
+  width: 100px;
+  height:25px;
+  border: 1px solid #ccdfff; /* Light blue border for inputs */
+  padding: 5px; /* Add some padding for input text */
+}
+/* Button container */
+.button-container {
+  text-align: center;
+  margin-top: 10px;
+}
+/* Button styling */
+.btn {
+  margin: 5px;
+  background-color: #3498db; /* Blue background for buttons */
+  color: #fff; /* White text for buttons */
+  border: none; /* Remove border for cleaner look */
+  padding: 8px 16px; /* Add some padding for button text */
+  border-radius: 4px; /* Rounded corners for buttons */
 }
