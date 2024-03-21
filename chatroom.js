@@ -6,4 +6,5 @@ document.getElementById("join-btn").addEventListener("click", function(){
   socket.connect();
   socket.on("connect", function(){
     socket.emit("user_join", host)
+  })
 })
