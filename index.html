@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHive Todo List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            display: flex;
+            font-size: large;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            width: 50%;
+        }
+        .todo-item {
+            display: flex;
+            font-size: large;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+            width: 120%; /* Set width of todo items */
+        }
+        /* Apply strikethrough effect to completed todos */
+        .completed label {
+            text-decoration: line-through;
+        }
+        /* Apply background color for checked todos */
+        .completed {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Todo List</h1>
+        <form action="/add" method="post" class="mb-3">
+            <div class="input-group">
+                <input type="text" class="form-control" name="todo" placeholder="Add new todo">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </form>
+        <ul class="list-group">
+            {% for todo in todos %}
+                <li class="list-group-item todo-item{% if todo['done'] %} completed{% endif %}">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="todo{{ loop.index }}" {% if todo['done'] %} checked {% endif %}>
+                        <label class="form-check-label" for="todo{{ loop.index }}">
+                            {{ todo['task'] }}
+                        </label>
+                    </div>
+                    <div>
+                        <a href="{{ url_for('edit', index=loop.index0) }}" class="btn btn-sm btn-info mr-2">Edit</a>
+                        <a href="{{ url_for('check', index=loop.index0) }}" class="btn btn-sm btn-secondary mr-2">{% if todo['done'] %}Uncheck{% else %}Check{% endif %}</a>
+                        <a href="{{ url_for('delete', index=loop.index0) }}" class="btn btn-sm btn-danger">Delete</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <script>
+        // Add event listeners to all checkboxes
+        document.querySelectorAll('.form-check-input').forEach(function(checkbox) {
+            checkbox.addEventListener('change', function() {
+                // Toggle the 'completed' class on the parent <li> element
+                this.closest('li').classList.toggle('completed');
+            });
+        });
+    </script>
+</body>
+</html>
