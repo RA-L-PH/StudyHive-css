@@ -1,1 +1,1 @@
-var socketio = io();
+var socketio = io({autoConnect: false});
