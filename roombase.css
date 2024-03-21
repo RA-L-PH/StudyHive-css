@@ -164,34 +164,39 @@ h2 {
 
 /* Form row */
 .row {
-    display: flex;
-    justify-content: space-around;
-    /* Add any specific styles for the form row here */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #e0e7ff; /* Light blue background for rows */
 }
 
 /* Column styling */
 .col-md-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-    /* Add any specific styles for the columns here */
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  border: 1px solid #ccdfff; /* Light blue border for columns */
+  padding: 10px; /* Add some padding for content */
 }
 
 /* Input styling */
 .form-control {
-    width: 100%;
-    /* Add any specific styles for the form inputs here */
+  width: 100%;
+  border: 1px solid #ccdfff; /* Light blue border for inputs */
+  padding: 5px; /* Add some padding for input text */
 }
 
 /* Button container */
 .button-container {
-    text-align: center;
-    margin-top: 10px;
-    /* Add any specific styles for the button container here */
+  text-align: center;
+  margin-top: 10px;
 }
 
 /* Button styling */
 .btn {
-    margin: 5px;
-    /* Add any specific styles for the buttons here */
+  margin: 5px;
+  background-color: #3498db; /* Blue background for buttons */
+  color: #fff; /* White text for buttons */
+  border: none; /* Remove border for cleaner look */
+  padding: 8px 16px; /* Add some padding for button text */
+  border-radius: 4px; /* Rounded corners for buttons */
 }
-
