@@ -173,7 +173,7 @@ h2 {
 /* Column styling */
 .col-md-4 {
   flex: 0 0 33.33333%;
-  max-width: 33.33333%;
+  max-width: 30%;
   border: 1px solid #ccdfff; /* Light blue border for columns */
   padding: 10px; /* Add some padding for content */
 }
