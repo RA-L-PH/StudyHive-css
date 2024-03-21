@@ -180,7 +180,7 @@ h2 {
 
 /* Input styling */
 .form-control {
-  width: 100%;
+  width: 20%;
   border: 1px solid #ccdfff; /* Light blue border for inputs */
   padding: 5px; /* Add some padding for input text */
 }
