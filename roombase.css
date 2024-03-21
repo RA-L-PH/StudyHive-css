@@ -45,7 +45,11 @@
   border-style: solid;
   border-width: 2px;
   flex-direction: column;
+  /* Center content horizontally and vertically */
+  align-items: center;
+  justify-content: center;
 }
+
 .home-container05 {
   flex: 0 0 auto;
   width: 30%;
@@ -160,15 +164,14 @@ h2 {
 }
 
 /* Form row */
-.row { /* Light blue background for rows */
+.row, /* Combine row and column styles into a single class */
+.col-md-4 {
+  background-color: #e0e7ff; /* Light blue background for rows */
+  padding: 10px;
+  border: 1px solid #ccdfff; /* Light blue border for both */
+  max-width: 10%; /* Adjust max-width for columns */
 }
 
-/* Column styling */
-.col-md-4 {
-  padding: 10px;
-  max-width: 10%;
-  border: 1px solid #ccdfff; /* Light blue border for columns */
-}
 
 /* Input styling */
 .form-control {
