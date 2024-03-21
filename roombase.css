@@ -162,37 +162,3 @@ h2 {
     margin-bottom: 10px;
     /* Add any specific styles for the timer container here */
 }
-
-/* Form row */
-.row, /* Combine row and column styles into a single class */
-.col-md-4 {
-  background-color: #e0e7ff; /* Light blue background for rows */
-  padding: 10px;
-  border: 1px solid #ccdfff; /* Light blue border for both */
-  max-width: 10%; /* Adjust max-width for columns */
-}
-
-
-/* Input styling */
-.form-control {
-  width: 100px;
-  height:25px;
-  border: 1px solid #ccdfff; /* Light blue border for inputs */
-  padding: 5px; /* Add some padding for input text */
-}
-
-/* Button container */
-.button-container {
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* Button styling */
-.btn {
-  margin: 5px;
-  background-color: #3498db; /* Blue background for buttons */
-  color: #fff; /* White text for buttons */
-  border: none; /* Remove border for cleaner look */
-  padding: 8px 16px; /* Add some padding for button text */
-  border-radius: 4px; /* Rounded corners for buttons */
-}
