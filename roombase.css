@@ -178,7 +178,7 @@ h2 {
 /* Input styling */
 .form-control {
   width: 100px;
-  height:15px;
+  height:25px;
   border: 1px solid #ccdfff; /* Light blue border for inputs */
   padding: 5px; /* Add some padding for input text */
 }
