@@ -164,7 +164,9 @@ h2 {
 
 /* Form row */
 .row {
+  display: flex;
   align-items: center;
+  justify-content: space-around;
   background-color: #e0e7ff; /* Light blue background for rows */
 }
 
