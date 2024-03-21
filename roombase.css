@@ -166,7 +166,6 @@ h2 {
 .row {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   background-color: #e0e7ff; /* Light blue background for rows */
 }
 
@@ -179,8 +178,8 @@ h2 {
 
 /* Input styling */
 .form-control {
-  width: 40px;
-  height:10px;
+  width: 100px;
+  height:15px;
   border: 1px solid #ccdfff; /* Light blue border for inputs */
   padding: 5px; /* Add some padding for input text */
 }
