@@ -61,3 +61,32 @@ h2 {
   font-size: 10px;
   color: darkgray;
 }
+
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e5e5e5;
+        }
+
+        #chat {
+            width: 50%;
+        }
+
+        #chat input {
+            width: 99%;
+        }
+
+        ul {
+            height: 500px;
+            background-color: white;
+            overflow-y: scroll;
+        }
+
+        li {
+            list-style: none;
+        }
+#landing{
+  
+}
